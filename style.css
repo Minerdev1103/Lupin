@@ -1,0 +1,55 @@
+/* Add Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap');
+
+/* All Class using same dataset */
+:root{
+    /* Define Variable */
+    --accent : #FD6B6B; /* Button color frome figma */
+    --accentHover : #ffA3A3; /*mouse Hover -> Light */
+    --dark60 : rgba(68, 90, 139, 0.6);/* 0.6 = 60% */
+    --light : #FFFFFF;
+    --transition : all 0.3s ease 0s; /* Define delay time */
+    
+}
+
+/* All section */
+
+*{
+    /* clear margin and padding */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;/* fixed height using Scroll */
+    overflow: auto;
+}
+
+body{
+    /* Gradien Shade of Collor */
+    /*background: linear-gradient( var(--dark60), var(--dark60) ),
+
+    url(images/background\ 1.jpg);*/
+
+    background-image: url(images/background\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position : center;
+    background-size: cover; /* Fixed Scale Screen */
+    
+}
+
+a, button, p{
+    font-family: "Roboto", sans-serif;
+    color: var(--light);
+}
+
+a, button, .logo{
+    cursor: pointer; /* Liink Element Hand cursor */
+}
+
+main{
+    height: 100%;
+    display: grid; /* work on Grid */
+    grid-template-columns: minmax(60px,1fr) repeat(6, minmax(50px, 190px)) minmax(60px, 1fr);
+}
