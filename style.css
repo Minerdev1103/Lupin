@@ -31,11 +31,12 @@ body{
     /*background: linear-gradient( var(--dark60), var(--dark60) ),
 
     url(images/background\ 1.jpg);*/
-
+    
     background-image: url(images/background\ 1.jpg);
     background-repeat: no-repeat;
     background-position : center;
     background-size: cover; /* Fixed Scale Screen */
+    
     
 }
 
